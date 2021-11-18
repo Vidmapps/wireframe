@@ -31,7 +31,7 @@ const showSlide = (slideIndex) => {
     dot.style.backgroundColor = "#bbb";
   });
   slides[slideIndex - 1].style.display = "block";
-  dots[(slideIndex - 1)].style.backgroundColor = "grey";
+  dots[slideIndex - 1].style.backgroundColor = "grey";
 };
 
 // Grid-list
