@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wireframe</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar-top flex-and-space-between">
+        <div class="navbar-logo flex-and-center">
+          <img
+            src="https://screenshot.click/05-45-0ikmf-tru0s.png"
+            class="navbar-logo-img"
+            alt="logo"
+          />
+        </div>
+        <nav class="navigation -uppercasing flex-and-center">
+          <ul class="navbar-content-mobile">
+            <div class="nav-toggle-btn -pointer">
+              <i
+                onclick="openMenu()"
+                class="fas fa-bars mobile-display"
+                id="navbar-burger"
+              ></i>
+              <i
+                onclick="closeMenu()"
+                class="fas fa-times hide"
+                id="navbar-cross"
+              ></i>
+            </div>
+            <div class="flex-and-center mobile-hide">
+              <div class="nav-item -pointer">Home</div>
+              <div class="nav-item -pointer">Shop</div>
+              <div class="nav-item -pointer">Reviews</div>
+              <div class="nav-item -pointer">Blog</div>
+            </div>
+          </ul>
+        </nav>
+      </nav>
+      <!-- Dropdown -->
+      <div class="navbar-content-dropdown ul-mobile-margin hide">
+        <ul class="center -uppercasing">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Shop</li>
+          <li class="nav-item">Reviews</li>
+          <li class="nav-item">Blog</li>
+        </ul>
+      </div>
+    </header>
+    <div class="navbar-content-block"></div>
+    <!-- Slider -->
+    <section>
+      <div class="slideshow-container">
+        <div class="slide">
+          <img
+            class="slider-image"
+            src="https://screenshot.click/07-55-y3mnx-mq9cc11.png"
+          />
+        </div>
+        <div class="slide">
+          <img
+            class="slider-image"
+            src="https://screenshot.click/07-55-y3mnx-mq9cc22.png"
+          />
+        </div>
+        <div class="slide">
+          <img
+            class="slider-image"
+            src="https://screenshot.click/07-55-y3mnx-mq9cc33.png"
+          />
+        </div>
+        <div class="dots">
+          <span class="dot -pointer" onclick="showSlide(1)"></span>
+          <span class="dot -pointer" onclick="showSlide(2)"></span>
+          <span class="dot -pointer" onclick="showSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+    <!-- Product cards -->
+    <section class="content-wrapper content-margin">
+      <div class="content-wrapper content-margin flex-and-space-between">
+        <div class="product-card">
+          <img
+            class="my-image"
+            src="https://screenshot.click/05-31-7qqpn-e7cfa.png"
+          />
+          <div class="product-name center -uppercasing">Product name</div>
+        </div>
+        <div class="product-card">
+          <img
+            class="my-image"
+            src="https://screenshot.click/05-31-7qqpn-e7cfa.png"
+          />
+          <div class="product-name center -uppercasing">Product name</div>
+        </div>
+        <div class="product-card">
+          <img
+            class="my-image"
+            src="https://screenshot.click/05-31-7qqpn-e7cfa.png"
+          />
+          <div class="product-name center -uppercasing">Product name</div>
+        </div>
+        <div class="product-card">
+          <img
+            class="my-image"
+            src="https://screenshot.click/05-31-7qqpn-e7cfa.png"
+          />
+          <div class="product-name center -uppercasing">Product name</div>
+        </div>
+        <div class="product-card mobile-hide">
+          <img
+            class="my-image"
+            src="https://screenshot.click/05-31-7qqpn-e7cfa.png"
+          />
+          <div class="product-name center -uppercasing">Product name</div>
+        </div>
+        <div class="product-card mobile-hide">
+          <img
+            class="my-image"
+            src="https://screenshot.click/05-31-7qqpn-e7cfa.png"
+          />
+          <div class="product-name center -uppercasing">Product name</div>
+        </div>
+        <div class="product-card mobile-hide">
+          <img
+            class="my-image"
+            src="https://screenshot.click/05-31-7qqpn-e7cfa.png"
+          />
+          <div class="product-name center -uppercasing">Product name</div>
+        </div>
+        <div class="product-card mobile-hide">
+          <img
+            class="my-image"
+            src="https://screenshot.click/05-31-7qqpn-e7cfa.png"
+          />
+          <div class="product-name center -uppercasing">Product name</div>
+        </div>
+        <button class="show-more-btn" onclick="showMore()">show more...</button>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section>
+      <h2 class="center">FREQUENTLY ASKED QUESTIONS (FAQs)</h2>
+      <ul class="content-margin ul-mobile-margin">
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a1, b1, c1)">
+              <i class="fas fa-plus" style="display: block" id="c1"></i>
+              <i class="fas fa-minus" style="display: none" id="b1"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a1">
+            It is a long escardlished fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a2, b2, c2)">
+              <i class="fas fa-plus" style="display: block" id="c2"></i>
+              <i class="fas fa-minus" style="display: none" id="b2"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a2">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a3, b3, c3)">
+              <i class="fas fa-plus" style="display: block" id="c3"></i>
+              <i class="fas fa-minus" style="display: none" id="b3"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a3">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a4, b4, c4)">
+              <i class="fas fa-plus" style="display: block" id="c4"></i>
+              <i class="fas fa-minus" style="display: none" id="b4"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a4">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a5, b5, c5)">
+              <i class="fas fa-plus" style="display: block" id="c5"></i>
+              <i class="fas fa-minus" style="display: none" id="b5"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a5">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a6, b6, c6)">
+              <i class="fas fa-plus" style="display: block" id="c6"></i>
+              <i class="fas fa-minus" style="display: none" id="b6"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a6">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a7, b7, c7)">
+              <i class="fas fa-plus" style="display: block" id="c7"></i>
+              <i class="fas fa-minus" style="display: none" id="b7"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a7">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a8, b8, c8)">
+              <i class="fas fa-plus" style="display: block" id="c8"></i>
+              <i class="fas fa-minus" style="display: none" id="b8"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a8">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+        <li>
+          <div class="faq-dropdown flex-and-space-between">
+            <div class="faq-question -uppercasing">
+              Lorem Ipsum has been the industry's standard
+            </div>
+            <div class="faq-toggle -pointer" onclick="showElement(a9, b9, c9)">
+              <i class="fas fa-plus" style="display: block" id="c9"></i>
+              <i class="fas fa-minus" style="display: none" id="b9"></i>
+            </div>
+          </div>
+          <hr />
+          <div class="faq-answer" style="display: none" id="a9">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer-container">
+      <div class="footer center -uppercasing">Footer</div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
