@@ -1,4 +1,4 @@
-# wireframe
+# ImpactTask - wireframe in Vanilla JS
  
 ## How to start?
 
